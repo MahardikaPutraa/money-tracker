@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Luxentra Finance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page" data-page="login">
+    <main class="auth-shell">
+      <section class="auth-card">
+        <div class="auth-card__title">LOGIN</div>
+        <div class="auth-card__body">
+          <h1>Masuk Ke Akun Anda</h1>
+          <p>Kelola keuangan anda secara lebih mudah.</p>
+
+          <form class="auth-form">
+            <label>
+              <span>Email</span>
+              <div class="input-shell">
+                <span class="input-icon">✉</span>
+                <input type="email" placeholder="Masukan Email" />
+              </div>
+            </label>
+
+            <label>
+              <span>Password</span>
+              <div class="input-shell">
+                <span class="input-icon">🔑</span>
+                <input type="password" placeholder="Masukan Password" />
+              </div>
+            </label>
+
+            <a class="text-link text-link--danger" href="forgot-password.html">Lupa Password?</a>
+
+            <div class="auth-actions auth-actions--split">
+              <button class="button button--primary button--block" type="submit">Login</button>
+              <button class="button button--primary button--block button--google" type="button">
+                <img src="assets/google-mark.svg" alt="" />
+                <span>Login Dengan Akun Google</span>
+              </button>
+            </div>
+          </form>
+
+          <p class="auth-switch">
+            Belum Punya Akun? <a href="register.html">Daftar Disini</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

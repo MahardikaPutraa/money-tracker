@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="luxentraBlue" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F73F1"/>
+      <stop offset="1" stop-color="#154E9F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="64" r="60" fill="url(#luxentraBlue)"/>
+  <path d="M36 47C36 39.8203 41.8203 34 49 34H78C85.1797 34 91 39.8203 91 47V81C91 88.1797 85.1797 94 78 94H49C41.8203 94 36 88.1797 36 81V47Z" stroke="white" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M36 46H77C85.8366 46 93 53.1634 93 62V66H77C71.4772 66 67 70.4772 67 76C67 81.5228 71.4772 86 77 86H93" stroke="white" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="78.5" cy="76" r="4.5" fill="white"/>
+</svg>

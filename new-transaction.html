@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Transaksi | Luxentra Finance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-page" data-page="new-transaction">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand brand--dark" href="dashboard.html">
+          <img src="assets/logo-mark.svg" alt="" />
+          <span>
+            <strong>Luxentra Finance</strong>
+            <small>Pengguna</small>
+          </span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <a class="sidebar-link" href="dashboard.html">Dashboard</a>
+          <a class="sidebar-link" href="transactions.html">Transaksi</a>
+          <a class="sidebar-link is-active" href="new-transaction.html">Tambah Transaksi</a>
+          <a class="sidebar-link" href="settings.html">Pengaturan</a>
+        </nav>
+
+        <a class="sidebar-exit" href="index.html">Keluar</a>
+      </aside>
+
+      <main class="app-main">
+        <header class="app-header">
+          <div>
+            <h1>Tambah Transaksi Baru</h1>
+            <p>Catat Pemasukan Atau Pengeluaran Anda</p>
+          </div>
+        </header>
+
+        <section class="panel">
+          <h2>Detail Transaksi</h2>
+          <p>Isi Informasi Lengkap Transaksi Anda</p>
+
+          <form class="form-grid">
+            <label>
+              <span>Tipe Transaksi</span>
+              <select class="select-shell">
+                <option>Pilih Tipe Transaksi</option>
+                <option>Pemasukan</option>
+                <option>Pengeluaran</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Kategori</span>
+              <select class="select-shell">
+                <option>Pilih Kategori</option>
+                <option>Gaji</option>
+                <option>Makanan</option>
+                <option>Transportasi</option>
+                <option>Tagihan</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Nominal</span>
+              <div class="input-shell">
+                <span class="input-icon">💸</span>
+                <input type="text" placeholder="Masukan Nominal" />
+              </div>
+            </label>
+
+            <label>
+              <span>Tanggal</span>
+              <div class="input-shell">
+                <span class="input-icon">🗓</span>
+                <input type="text" value="14 Maret 2026" />
+              </div>
+            </label>
+
+            <label class="form-grid__full">
+              <span>Catatan</span>
+              <textarea placeholder="Tambahkan Catatan Atau Deskripsi Transaksi Anda (Opsional)"></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="button button--muted" type="button">Batal</button>
+              <button class="button button--success" type="submit">Simpan Transaksi</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

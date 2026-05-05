@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengaturan | Luxentra Finance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-page" data-page="settings">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand brand--dark" href="dashboard.html">
+          <img src="assets/logo-mark.svg" alt="" />
+          <span>
+            <strong>Luxentra Finance</strong>
+            <small>Pengguna</small>
+          </span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <a class="sidebar-link" href="dashboard.html">Dashboard</a>
+          <a class="sidebar-link" href="transactions.html">Transaksi</a>
+          <a class="sidebar-link" href="new-transaction.html">Tambah Transaksi</a>
+          <a class="sidebar-link is-active" href="settings.html">Pengaturan</a>
+        </nav>
+
+        <a class="sidebar-exit" href="index.html">Keluar</a>
+      </aside>
+
+      <main class="app-main">
+        <header class="app-header">
+          <div>
+            <h1>Pengaturan Profil</h1>
+            <p>Kelola informasi akun dan preferensi Anda</p>
+          </div>
+        </header>
+
+        <section class="panel">
+          <h2>Informasi Profil</h2>
+          <p>Update foto dan informasi pribadi Anda</p>
+
+          <div class="profile-card">
+            <div class="profile-avatar">A</div>
+            <div class="profile-card__copy">
+              <h3>Agus Kurnawan</h3>
+              <p>aguskn692@gmail.com</p>
+              <button class="button button--outline" type="button">Ganti foto</button>
+            </div>
+          </div>
+
+          <form class="form-grid">
+            <label>
+              <span>Nama Lengkap</span>
+              <div class="input-shell">
+                <span class="input-icon">👤</span>
+                <input type="text" value="Agus Kurnawan" />
+              </div>
+            </label>
+
+            <label>
+              <span>Email</span>
+              <div class="input-shell">
+                <span class="input-icon">✉</span>
+                <input type="email" value="aguskn692@gmail.com" />
+              </div>
+            </label>
+
+            <label>
+              <span>Nomor Telepon (Opsional)</span>
+              <div class="input-shell">
+                <span class="input-icon">☎</span>
+                <input type="text" value="+62 812-3456-7890" />
+              </div>
+            </label>
+          </form>
+        </section>
+
+        <section class="panel">
+          <h2>Ubah Password</h2>
+          <p>Pastikan password Anda kuat dan aman</p>
+
+          <form class="form-grid">
+            <label class="form-grid__full">
+              <span>Password Lama</span>
+              <div class="input-shell">
+                <span class="input-icon">🔒</span>
+                <input type="password" placeholder="Masukan Password Lama Anda" />
+              </div>
+            </label>
+
+            <label>
+              <span>Password Baru</span>
+              <div class="input-shell">
+                <span class="input-icon">🔒</span>
+                <input type="password" placeholder="Minimal 8 Karakter" />
+              </div>
+            </label>
+
+            <label>
+              <span>Konfirmasi Password Baru</span>
+              <div class="input-shell">
+                <span class="input-icon">🔒</span>
+                <input type="password" placeholder="Ketik Ulang Password Baru" />
+              </div>
+            </label>
+          </form>
+        </section>
+
+        <section class="panel panel--danger">
+          <div class="danger-row">
+            <div>
+              <h2>Hapus Akun</h2>
+              <p>Hapus akun dan semua data terkait secara permanen.</p>
+            </div>
+            <button class="button button--danger" type="button">Hapus Akun</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

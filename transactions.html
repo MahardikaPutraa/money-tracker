@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transaksi | Luxentra Finance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="app-page" data-page="transactions">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand brand--dark" href="dashboard.html">
+          <img src="assets/logo-mark.svg" alt="" />
+          <span>
+            <strong>Luxentra Finance</strong>
+            <small>Pengguna</small>
+          </span>
+        </a>
+
+        <nav class="sidebar-nav">
+          <a class="sidebar-link" href="dashboard.html">Dashboard</a>
+          <a class="sidebar-link is-active" href="transactions.html">Transaksi</a>
+          <a class="sidebar-link" href="new-transaction.html">Tambah Transaksi</a>
+          <a class="sidebar-link" href="settings.html">Pengaturan</a>
+        </nav>
+
+        <a class="sidebar-exit" href="index.html">Keluar</a>
+      </aside>
+
+      <main class="app-main">
+        <header class="app-header app-header--split">
+          <div>
+            <h1>Daftar Transaksi</h1>
+            <p>Kelola Semua Transaksi Keuangan Anda</p>
+          </div>
+          <a class="button button--ghost" href="new-transaction.html">+ Tambah Transaksi</a>
+        </header>
+
+        <section class="stats-grid">
+          <article class="metric-card metric-card--purple">
+            <h3>Total Transaksi</h3>
+            <strong>15</strong>
+            <span>Jumlah Semua Transaksi</span>
+          </article>
+          <article class="metric-card metric-card--green">
+            <h3>Total Pemasukan</h3>
+            <strong>Rp 18.300.000</strong>
+            <span>Total Pemasukan Bulan Ini</span>
+          </article>
+          <article class="metric-card metric-card--red">
+            <h3>Total Pengeluaran</h3>
+            <strong>Rp 1.900.000</strong>
+            <span>Total Pengeluaran Bulan Ini</span>
+          </article>
+        </section>
+
+        <section class="panel">
+          <h2>Filter Transaksi</h2>
+          <p>Cari dan Filter Transaksi Sesuai Dengan Keinginan Anda</p>
+
+          <form class="filter-grid" id="transactionFilters">
+            <div class="filter-grid__top">
+              <label class="input-shell input-shell--pill">
+                <span class="input-icon">⌕</span>
+                <input id="searchInput" type="search" placeholder="Pilih Tipe Transaksi" />
+              </label>
+
+              <select id="categoryFilter" class="select-shell">
+                <option value="">Semua Kategori</option>
+                <option value="Gaji">Gaji</option>
+                <option value="Makanan">Makanan</option>
+                <option value="Transportasi">Transportasi</option>
+                <option value="Tagihan">Tagihan</option>
+              </select>
+
+              <select id="typeFilter" class="select-shell">
+                <option value="">Semua Tipe</option>
+                <option value="Pemasukan">Pemasukan</option>
+                <option value="Pengeluaran">Pengeluaran</option>
+              </select>
+            </div>
+
+            <div class="filter-grid__bottom">
+              <div class="filter-row">
+                <span>Urutan:</span>
+                <select id="sortField" class="select-shell">
+                  <option value="date">Tanggal</option>
+                  <option value="amount">Nominal</option>
+                </select>
+                <select id="sortDirection" class="select-shell">
+                  <option value="desc">Terbesar</option>
+                  <option value="asc">Terkecil</option>
+                </select>
+              </div>
+
+              <button id="resetFilters" class="button button--muted" type="button">Riset Filter</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel">
+          <h2>Semua Transaksi</h2>
+          <p>10 Transaksi Terakhir Anda</p>
+          <div class="transaction-list" id="transactionsList"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
